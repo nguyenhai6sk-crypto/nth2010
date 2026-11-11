@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 3</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Thông tin cá nhân</legend>
+        <form action="/action_page.php" method="get">
+            <label for="name">Tên của bạn:</label>
+            <input type="text" id="name" name="name" required value="Nguyễn Thị Hải"><br>
+            <label for="fname">Họ của bạn:</label>
+            <input type="text" id="fname" name="fname" readonly value="Nguyễn"><br>
+        <label for="cars">Chọn xe:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="VinFast">VinFast</option>
+            <option value="audi">Audi</option>
+            <option value="mercedes" selected>Mercedes</option>
+            <option value="bmw">BMW</option>
+            <option value="ferrari">Ferrari</option>
+        </select><br>
+        <label for="message">Thông tin cá nhân</label>
+        <textarea name="message" id="message" rows="10" cols="30">Personal</textarea><br>
+        <button type="button" onclick="alert('Hello World')">Click me</button>
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Safari">
+            <option value="Edge">
+        </datalist>
+        <input type="submit">
+        <label for="password">Mật khẩu:</label>
+        <input type="password" name="password" id="password"><br>
+        
+    </form>
+    </fieldset>
+</body>
+</html>
